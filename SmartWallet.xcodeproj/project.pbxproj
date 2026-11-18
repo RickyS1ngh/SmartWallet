@@ -6,13 +6,30 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B7FA35F030AD6E5300EE8FF1 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B7FA35EF30AD6E5300EE8FF1 /* Lottie */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B7960C4930A681D300B55267 /* SmartWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B765A77630ADBC570006D251 /* Exceptions for "SmartWallet" folder in "SmartWallet" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B7960C4830A681D300B55267 /* SmartWallet */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B7960C4B30A681D300B55267 /* SmartWallet */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B765A77630ADBC570006D251 /* Exceptions for "SmartWallet" folder in "SmartWallet" target */,
+			);
 			path = SmartWallet;
 			sourceTree = "<group>";
 		};
@@ -22,6 +39,7 @@
 		B7960C4630A681D300B55267 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				B7FA35F030AD6E5300EE8FF1 /* Lottie in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -60,6 +78,9 @@
 				B7960C4B30A681D300B55267 /* SmartWallet */,
 			);
 			name = SmartWallet;
+			packageProductDependencies = (
+				B7FA35EF30AD6E5300EE8FF1 /* Lottie */,
+			);
 			productName = SmartWallet;
 			productReference = B7960C4930A681D300B55267 /* SmartWallet.app */;
 			productType = "com.apple.product-type.application";
@@ -88,6 +109,9 @@
 			);
 			mainGroup = B7960C4030A681D300B55267;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B7FA35EE30AD6E5300EE8FF1 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B7960C4A30A681D300B55267 /* Products */;
 			projectDirPath = "";
@@ -246,6 +270,10 @@
 				DEVELOPMENT_TEAM = 453B723P8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartWallet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -278,6 +306,10 @@
 				DEVELOPMENT_TEAM = 453B723P8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartWallet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7FA35EE30AD6E5300EE8FF1 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7FA35EF30AD6E5300EE8FF1 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7FA35EE30AD6E5300EE8FF1 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7960C4130A681D300B55267 /* Project object */;
 	validationLevel = 1;
